@@ -12,6 +12,6 @@ namespace Hr.LeaveManagement.Application.Contracts.Persistence
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(T entity);
         Task GetByIdAsync(int id);
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IReadOnlyList<T>> GetAllAsync();
     }
 }
