@@ -8,7 +8,7 @@ using HR.LeaveManagement.Domain;
 
 namespace Hr.LeaveManagement.Application.Contracts.Persistence
 {
-    internal interface ILeaveRequestRepository : IGenericRepositor<LeaveRequest>
+    public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>
     {
     }
 }

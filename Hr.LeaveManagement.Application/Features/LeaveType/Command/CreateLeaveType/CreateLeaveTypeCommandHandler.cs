@@ -23,7 +23,7 @@ namespace Hr.LeaveManagement.Application.Features.LeaveType.Command.CreateLeaveT
         public async Task<int> Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken)
         {
             var leaveTypeToCreate = _mapper.Map<Domain.LeaveType>(request);
-            var validator = new CreateLeaveTypeCommandValidator();
+            var validator = new CreateLeaveTypeCommandValidator(_ILeaveTypeRepository);
             var validationResult = await validator.ValidateAsync(request);
             if (validationResult.Errors.Any())
                 throw new BadRequestException("Invalid input",validationResult);
