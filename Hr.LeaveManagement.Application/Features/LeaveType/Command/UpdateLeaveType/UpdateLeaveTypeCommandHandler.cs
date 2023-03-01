@@ -24,6 +24,8 @@ namespace Hr.LeaveManagement.Application.Features.LeaveType.Command.UpdateLeaveT
             // convert to domain entity object
             var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
 
+            //ToDo add validations
+
             // add to database
             await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate);
 
