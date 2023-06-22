@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hr.LeaveManagement.Application.Features.LeaveType.Command.UpdateLeaveType
 {
-    internal class UpdateLeaveTypeCommand : IRequest<Unit>
+    public class UpdateLeaveTypeCommand : IRequest<Unit>
     {
 
     }

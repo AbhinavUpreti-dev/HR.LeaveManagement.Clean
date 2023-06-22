@@ -1,6 +1,6 @@
 ﻿namespace Hr.LeaveManagement.Application.Features.LeaveType.Query.GetLeaveTypeDetails
 {
-    internal class LeaveTypeDetailsDto
+    public class LeaveTypeDetailsDto
     {
         public string Name { get; set; } = string.Empty;
 

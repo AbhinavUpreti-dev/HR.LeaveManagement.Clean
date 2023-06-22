@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hr.LeaveManagement.Application.Contracts.Persistence
 {
-    public interface IGenericRepository<T> where T : BaseEntity
+    public interface IGenericRepository<T> where T : class
     {
         Task CreateAsync(T entity);
         Task UpdateAsync(T entity);
