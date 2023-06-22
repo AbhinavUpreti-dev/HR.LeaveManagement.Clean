@@ -31,12 +31,12 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
                 .Where(q => q.State == EntityState.Added || q.State == EntityState.Modified))
             {
                 entry.Entity.DateModified = DateTime.Now;
-                entry.Entity.ModifiedBy = "";
+                entry.Entity.ModifiedBy = "abhinav";
 
                 if (entry.State == EntityState.Added)
                 {
                     entry.Entity.DateCreated = DateTime.Now;
-                    entry.Entity.CreatedBy = "";
+                    entry.Entity.CreatedBy = "abhinav";
 
                 }
             }
